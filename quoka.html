@@ -2,29 +2,136 @@
 <html>
 <head>
   <title>Quokas</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+  color: #555;
+  text-align: center;
+}
+
+h2 {
+  color: #777;
+  margin-top: 30px;
+}
+
+p {
+  color: #444;
+}
+
+ul {
+  list-style-type: disc;
+  color: #666;
+  margin-left: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.button {
+  display: inline-block;
+  background-color: #42b983;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #339567;
+}
+</style>
+<script>
+   function mostrarTamaño() {
+     var tamaño = document.getElementById("tamaño");
+     tamaño.style.display = "block";
+   }
+
+   function mostrarDieta() {
+     var dieta = document.getElementById("dieta");
+     dieta.style.display = "block";
+   }
+
+   function mostrarHábitat() {
+     var hábitat = document.getElementById("hábitat");
+     hábitat.style.display = "block";
+   }
+
+   function mostrarComportamiento() {
+     var comportamiento = document.getElementById("comportamiento");
+     comportamiento.style.display = "block";
+   }
+ </script>
 </head>
 <body>
-  <h1>Quokas</h1>
-  <p>Las quokas son pequeños marsupiales que se encuentran en algunas islas de Australia Occidental. Son conocidas por su naturaleza amigable y su expresión facial sonriente.</p>
+ <h1>Quokas</h1>
+ <p>Las quokas son pequeños marsupiales que se encuentran en algunas islas de Australia Occidental. Son conocidas por su naturaleza amigable y su expresión facial sonriente.</p>
 
-  <h2>Características de las Quokas</h2>
-  <ul>
-    <li>Tamaño: Las quokas miden alrededor de 40-54 cm de largo.</li>
-    <li>Dieta: Son principalmente herbívoras, se alimentan de hojas, tallos y cortezas.</li>
-    <li>Hábitat: Las quokas viven en áreas boscosas y arbustivas.</li>
-    <li>Comportamiento: Son animales sociables y se mueven en grupos pequeños.</li>
-  </ul>
+ <h2>Características de las Quokas</h2>
+ <ul>
+   <li><button onclick="mostrarTamaño()">Tamaño</button></li>
+   <li><button onclick="mostrarDieta()">Dieta</button></li>
+   <li><button onclick="mostrarHábitat()">Hábitat</button></li>
+   <li><button onclick="mostrarComportamiento()">Comportamiento</button></li>
+ </ul>
 
-  <h2>Imagen de una Quoka</h2>
-  <img src="quokka.jpg" alt="Quoka">
+ <div id="tamaño" style="display: none;">
+   <h3>Tamaño</h3>
+   <p>Las quokas miden alrededor de 40-54 cm de largo.</p>
+ </div>
 
-  <h2>Vídeo de Quokas</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/eb1G3KnNVeA" frameborder="0" allowfullscreen></iframe>
+ <div id="dieta" style="display: none;">
+   <h3>Dieta</h3>
+   <p>Son principalmente herbívoras, se alimentan de hojas, tallos y cortezas.</p>
+ </div>
 
-  <h2>Referencias</h2>
-  <ul>
-    <li><a href="https://es.wikipedia.org/wiki/Quokka" target="_blank">Wikipedia: Quokka</a></li>
-    <li><a href="https://www.nationalgeographic.com/animals/mammals/q/quokka/" target="_blank">National Geographic: Quokka</a></li>
-  </ul>
+ <div id="hábitat" style="display: none;">
+   <h3>Hábitat</h3>
+   <p>Las quokas viven en áreas boscosas y arbustivas.</p>
+ </div>
+
+ <div id="comportamiento" style="display: none;">
+   <h3>Comportamiento</h3>
+   <p>Son animales sociables y se mueven en grupos pequeños.</p>
+ </div>
+
+ <h2><strong>Hábitat y Distribución</strong></h2>
+ <p>Las quokas son endémicas de algunas islas de Australia Occidental, como la Isla Rottnest y la Isla Bald. También se encuentran en áreas costeras de la parte suroeste de Australia Occidental. Prefieren habitar áreas boscosas y arbustivas con acceso a agua dulce y una variedad de vegetación para alimentarse.</p>
+
+ <h2><strong>Interacción con los Seres Humanos</strong></h2>
+ <p>Las quokas han ganado popularidad debido a su apariencia adorable y su expresión facial sonriente. Muchos turistas visitan la Isla Rottnest para tener la oportunidad de interactuar y tomar fotografías con estas encantadoras criaturas. Sin embargo, es importante recordar que las quokas son animales salvajes y se debe mantener una distancia segura y respetar su entorno natural.</p>
+
+ <h2><strong>Conservación y Estado de la Población</strong></h2>
+ <p>A pesar de su apariencia amigable y su popularidad en las redes sociales, las quokas están clasificadas como especies "vulnerables" debido a varias amenazas. La pérdida de hábitat, la depredación por parte de especies introducidas y el cambio climático representan desafíos significativos para su supervivencia. Varios programas de conservación y protección de las quokas están en marcha para asegurar su supervivencia a largo plazo.</p>
+
+ <h2><strong>Imagen de una Quoka</strong></h2>
+ <img src="quokka.jpg" alt="Quoka">
+
+ <h2><strong>Más Imágenes de Quokas</strong></h2>
+ <div>
+   <img src="quokka2.jpg" alt="Quoka 2">
+   <img src="quokka3.jpg" alt="Quoka 3">
+   <img src="quokka4.jpg" alt="Quoka 4">
+ </div>
+
+ <h2><strong>Vídeo de Quokas</strong></h2>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/eb1G3KnNVeA" frameborder="0" allowfullscreen></iframe>
+
+ <h2>Referencias</h2>
+ <ul>
+   <li><a href="https://es.wikipedia.org/wiki/Quokka" target="_blank">Wikipedia: Quokka</a></li>
+   <li><a href="https://www.nationalgeographic.com/animals/mammals/q/quokka/" target="_blank">National Geographic: Quokka</a></li>
+ </ul>
+</body>
+</html>
+  <a href="https://www.youtube.com/embed/7lQfj-_8Zg0" class="button">¡Descubre más sobre las quokas!</a>
 </body>
 </html>
